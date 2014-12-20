@@ -26,6 +26,6 @@ main = do
       , ((0                     , 0x1008FF13), spawn "~/.xmonad/volume/volumeup.sh")]
 
 startup = do
-  spawn "trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 10 --transparent true --tint 0x000000 --height 17 &"
+  spawn "trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 10 --transparent true --alpha 0 --tint 0x000000 --height 17 &"
   spawn "nm-applet &"
   spawn "dropbox start &"
