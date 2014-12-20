@@ -6,7 +6,7 @@ Config { font = "-*-Fixed-Bold-R-Normal-*-13-*-*-*-*-*-*-*"
                     , Run Memory ["-t","Mem: <usedratio>%"] 10
                     , Run Swap [] 10
                     , Run Date "%a %b %_d %l:%M" "date" 10
-		    , Run Com "sh" ["~/.xmonad/volume/volume.sh"] "volume" 10
+		    , Run Com "/bin/sh" ["-c", "~/.xmonad/volume/volume.sh"] "volume" 10
                     , Run StdinReader
                     ]
        , sepChar = "%"
