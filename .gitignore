@@ -1,1 +1,5 @@
 volume/.mute.state
+/xmonad-i386-linux
+/xmonad.errors
+/xmonad.hi
+/xmonad.o
