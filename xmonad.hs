@@ -20,7 +20,7 @@ main = do
       , terminal = "sakura"
       } `additionalKeys`
       [ ((mod4Mask              , xK_s)      , spawn "sudo pm-suspend")
-      , ((mod4Mask              , xK_q)      , spawn "killall dropbox nm-applet trayer" >> restart "xmonad" True)
+      , ((mod4Mask              , xK_q)      , spawn "killall trayer dropbox nm-applet trayer" >> restart "xmonad" True)
       , ((0                     , 0x1008FF11), spawn "~/.xmonad/volume/volumedown.sh")
       , ((0                     , 0x1008FF12), spawn "~/.xmonad/volume/mute.sh")
       , ((0                     , 0x1008FF13), spawn "~/.xmonad/volume/volumeup.sh")]
